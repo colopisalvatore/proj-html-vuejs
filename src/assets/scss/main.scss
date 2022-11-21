@@ -1,0 +1,139 @@
+//SCSS IMPORT
+@import "./partials/header";
+@import "./partials/_variables";
+
+
+//GENERAL IMPORT
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+@import "bootstrap/scss/bootstrap";
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: $white;
+}
+
+.fw-400{
+    font-weight: 400!important;
+}
+
+a {
+  color: #47b2e4;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #73c5eb;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Jost", sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.section-bg {
+    background-color: #f3f5fa;
+}
+
+.section-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #37517e;
+}
+
+.section-title h2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+
+.section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #47b2e4;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+
+.section-title p {
+    margin-bottom: 0;
+}
+
+/*--------------------------------------------------------------
+# Button
+--------------------------------------------------------------*/
+
+.btn  {
+    padding: 9px 26px;
+    border: none!important;
+    border-radius: 25px;
+    width: auto;
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff!important;
+    transition: all .15s ease-out!important;
+        cursor: pointer;
+}
+
+.btn-hero {
+    padding: 14px 39px 13px;
+}
+
+.btn-blue{
+    background-image: linear-gradient(90deg, #03a7d3 0%, #1f3c81 100%);
+}
+
+.btn-blue:hover,
+.btn-blue:focus:hover {
+    color: #fff;
+    background-image: linear-gradient(90deg, #f9636b 0%, #b6246e 100%);
+}
+
+.btn-red {
+    background-image: linear-gradient(90deg, #f9636b 0%, #b6246e 100%);
+}
+
+.btn-red:hover,
+.btn-red:focus:hover {
+    color: #fff;
+    background-image: linear-gradient(90deg, #03a7d3 0%, #1f3c81 100%);
+}
