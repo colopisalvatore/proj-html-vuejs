@@ -33,9 +33,9 @@ export default {
 </script>
 
 <template>
-<div class="container">
+<div class="container" data-aos="fade-up">
     <div class="row">
-        <div class="my-card col-3" v-for="item, index in WeDo" :key="index">
+        <div class="my-card col-3" v-for="item, index in WeDo" :key="index" data-aos="fade-up" data-aos-delay="800">
             <div class="img-contain">
                 <img :src="(`../src/assets/img/` + item.img)" alt="">
             </div>

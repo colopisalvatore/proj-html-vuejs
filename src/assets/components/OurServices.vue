@@ -16,11 +16,11 @@ export default {
 
     <div class="container" data-aos="fade-up">
         <div class="d-flex justify-content-center">
-            <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up">
                 <div class="content text-center">
-                    <h6>Our Services</h6>
-                    <h1><strong>What</strong> We Do</h1>
-                    <p>
+                    <h6 data-aos="fade-up" data-aos-delay="200">Our Services</h6>
+                    <h1 data-aos="fade-up" data-aos-delay="400"><strong>What</strong> We Do</h1>
+                    <p data-aos="fade-up" data-aos-delay="600">
                         When, while the lovely valley teems with vapour around meand the
                     </p>
                 </div>
