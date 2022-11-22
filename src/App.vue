@@ -1,13 +1,17 @@
 <script setup>
 import HeaderCompVue from './assets/components/HeaderComp.vue';
 import HeroComp from './assets/components/HeroComp.vue';
+import OurServices from './assets/components/OurServices.vue';
 
 
 </script>
 
 <template>
 <HeaderCompVue />
-<HeroComp />  
+<HeroComp />
+<main>
+    <OurServices />
+</main>  
 </template>
 
 <style lang="scss" scoped>
