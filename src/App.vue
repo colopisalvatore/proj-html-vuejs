@@ -7,6 +7,11 @@ import PortfolioComp from './assets/components/PortfolioComp.vue';
 import PriceComp from './assets/components/PriceComp.vue';
 import BlogComp from './assets/components/BlogComp.vue';
 import TestimonialsComp from './assets/components/TestimonialsComp.vue';
+import ClientComp from './assets/components/ClientComp.vue'; 
+import SubscribeComp from './assets/components/SubscribeComp.vue'; 
+import FooterComp from './assets/components/FooterComp.vue'; 
+
+
 
 
 
@@ -19,7 +24,10 @@ export default {
     PortfolioComp,
     PriceComp,
     BlogComp,
-    TestimonialsComp
+    TestimonialsComp,
+    ClientComp,
+    SubscribeComp,
+    FooterComp
 },
 }
 
@@ -36,6 +44,9 @@ export default {
     <PriceComp />
     <BlogComp />
     <TestimonialsComp />
+    <ClientComp />
+    <SubscribeComp />
+    <FooterComp />
 </main>  
 </template>
 

@@ -165,4 +165,91 @@ export const store = reactive ({
             comment: "When, while lovely valley teems with vapour around meand meridian sun strikes the upper impenetrable foliage of my trees, and but a thousand "
         }
     ],
+
+    ClientList: [
+        {
+            name: "Golden",
+            imgUrl: "client-1"
+        },
+        {
+            name: "Sweety",
+            imgUrl: "client-2"
+        },
+        {
+            name: "Fastlane",
+            imgUrl: "client-3"
+        },
+        {
+            name: "Mighty Furnitures",
+            imgUrl: "client-4"
+        },
+        {
+            name: "Jack Roller",
+            imgUrl: "client-5"
+        }
+    ],
+    
+    footerLinks: [
+        {
+            title: "Resources",
+            links: [
+                {
+                    name: "Art Design",
+                    href: "/artdesign"
+                },
+                {
+                    name: "Computer",
+                    href: "/computer"
+                },
+                {
+                    name: "IT News",
+                    href: "/itnews"
+                },
+                {
+                    name: "Networking",
+                    href: "/networking"
+                },
+                {
+                    name: "web Security",
+                    href: "/websicurity"
+                }
+            ]
+        },
+        {
+            title: "Contact Us",
+            links: [
+                {
+                    name: "Address",
+                    description: "Patricia C. Amedee 4401 Waldeck Street Grapevine Nashville, Tx 76051"
+                },
+                {
+                    name: "Phone",
+                    description: "+99 (0) 101 0000 888"
+                },
+                {
+                    name: "Email",
+                    description: "info@yourdimain.com"
+                }
+            ]
+        }
+    ],
+
+    socialLinks: [
+        {
+            name: "instagram",
+            href: "/instagramlink"
+        },
+        {
+            name: "linkedin-in",
+            href: "/linkedinlink"
+        },
+        {
+            name: "facebook-f",
+            href: "/facebooklink"
+        },
+        {
+            name: "twitter",
+            href: "/twitterlink"
+        }
+    ],
 })

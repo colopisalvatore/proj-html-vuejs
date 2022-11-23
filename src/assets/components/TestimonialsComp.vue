@@ -42,6 +42,10 @@ export default {
 @import '../scss/main.scss';
 @import '../scss/partials/_variables';
 
+section{
+    height: 80vh!important;
+}
+
 .container{
     .card-comp{
         margin: 80px 0;
