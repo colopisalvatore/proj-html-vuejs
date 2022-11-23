@@ -13,19 +13,19 @@ export default {
 </script>
 
 <template>
-    <div class="card-pricing">
-        <div class="title mb-3">
+    <div class="card-pricing" data-aos="flip-down" data-aos-delay="600">
+        <div class="title mb-3" data-aos="zoom-out" data-aos-delay="650">
             <h2 class="fs-1 fw-bold">{{ product.name }}</h2>
             <h4 class=" fw-normal">{{ product.type.toUpperCase() }}</h4>
         </div>
-        <div class="price mb-3">
+        <div class="price mb-3" data-aos="zoom-out" data-aos-delay="680">
             <h2 class="fw-bold pt-2"><span class="fw-semibold">$</span>{{ product.price }}</h2>
             <p class="fs-6 fw-ligth">Per Month</p>
         </div>
         <div class="description">
             <ul>
                 <li v-for="(item, index) in product.descriptionList" :key="index">
-                    <h3 class="fs-6">{{ item.title }} <span class="fw-normal">{{ item.description }}</span></h3>
+                    <h3 class="fs-6" data-aos="zoom-out" data-aos-delay="700">{{ item.title }} <span class="fw-normal" data-aos="zoom-out" data-aos-delay="720">{{ item.description }}</span></h3>
                 </li>
             </ul>
         </div>
@@ -33,7 +33,8 @@ export default {
             <span>{{ product.price }}</span>
         </div>
         
-        <button href="#" class="btn-red btn btn-hero button">Order Now <i class="fa-solid fa-arrow-right"></i></button>
+        <button href="#" class="btn-red btn btn-hero button" data-aos="fade-up"
+     data-aos-delay="3000">Order Now <i class="fa-solid fa-arrow-right"></i></button>
 
     </div>
 </template>
@@ -45,7 +46,7 @@ export default {
 .card-pricing {
     min-height: 400px;
     min-width: 300px;
-    max-width: 500px;
+    max-width: 600px;
     text-align: center;
     padding: 1.5em;
     border-radius: 20px;
@@ -108,7 +109,6 @@ export default {
             }
             span{
                 color: $text-secondary;
-                transition: all .2s ease-out;
             }            
         }
     }
