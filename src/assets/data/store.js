@@ -111,4 +111,58 @@ export const store = reactive ({
             ]
         }
     ],
+
+    blogLists: [
+        {
+            img: "blog",
+            name: "Paul",
+            message: {
+                date: "April 21, 2019",
+                title: "Amazon gets CCI nod to acquire 49% stake in",
+                description: "When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper surface ."
+            }
+        },
+        {
+            img: "",
+            name: "Paul",
+            message: {
+                date: "April 21, 2019",
+                title: "Clearing Corporations get SEBI nod to invest in overnight funds",
+                description: "When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper surface ."
+            }
+        },
+        {
+            img: "",
+            name: "Paul",
+            message: {
+                date: "April 21, 2019",
+                title: "Shabnam Dhillion, wife of RSSB chief Gurinder Dhillon, passes away in London",
+                description: "When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper surface ."
+            }
+        }
+    ],
+
+    testimonialList: [
+        {
+            fullName: "Michkel Angel",
+            employment: "Marketing Managment",
+            urlImg: "Michkel-Angel",
+            rating: 3,
+            comment: "When, while lovely valley teems with vapour around meand meridian sun strikes the upper impenetrable foliage of my trees, and but a thousand "
+        },
+        {
+            fullName: "Fabiola Angel",
+            employment: "Marketing Managment",
+            urlImg: "Fabiola-Angel",
+            rating: 3,
+            comment: "When, while lovely valley teems with vapour around meand meridian sun strikes the upper impenetrable foliage of my trees, and but a thousand "
+        },
+        {
+            fullName: "Federica Angel",
+            employment: "Marketing Managment",
+            urlImg: "Federica-Angel",
+            rating: 3,
+            comment: "When, while lovely valley teems with vapour around meand meridian sun strikes the upper impenetrable foliage of my trees, and but a thousand "
+        }
+    ],
 })

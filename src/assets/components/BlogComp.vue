@@ -1,12 +1,12 @@
 <script>
 import { store } from '../data/store'
-import CardPriceComp from './CardPriceComp.vue';
+import CardBlogsComp from './CardBlogsComp.vue';
 
 export default {
-    name: "PriceComp",
+    name: "BlogComp",
     components: {
-        CardPriceComp
-    },
+    CardBlogsComp
+},
     data() {
         return {
             store
@@ -22,19 +22,18 @@ export default {
             <div class="d-flex justify-content-center">
                 <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up">
                     <div class="content text-center">
-                        <h6 data-aos="fade-up" data-aos-delay="200">Price List</h6>
-                        <h1 data-aos="fade-up" data-aos-delay="400">Our Pricing</h1>
+                        <h6 data-aos="fade-up" data-aos-delay="200">Blog</h6>
+                        <h1 data-aos="fade-up" data-aos-delay="400"><strong>Latest</strong> Posts</h1>
                         <p data-aos="fade-up" data-aos-delay="600">
-                            When, while the lovely valley teems with vapour around meand the meridian sun strikes the
-                            upper surface .
+                            When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper surface.
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="row row-cols-1 row-cols-lg-3 pt-5">
-                <div class="col d-flex align-items-center justify-content-center d-lg-block mb-5 mb-lg-0"
-                    v-for="(product, index) in store.productList" :key="index">
-                    <CardPriceComp :product="product" :color="(index % 2) === 0 ? 'white' : 'orange'" />
+            <div class="row pt-5" data-aos="zoom-out" data-aos-delay="600">
+                <div v-for="(post, index) in store.blogLists" :key="index"
+                    :class="post.img ? 'col-12 col-xl-6 mb-4' : 'col-6 col-xl-3'">
+                    <CardBlogsComp :post="post" />
                 </div>
             </div>
         </div>
@@ -46,20 +45,12 @@ export default {
  @import "../scss/partials/header.scss";
  @import "../scss/main.scss";
  
- #PriceList {
-     width: 100%;
-     height: 100vh;
-     background-color: transparent;
-     background-image: linear-gradient(180deg, #0b1953 60%, #FBFBFB 60%);
- }
- 
  .container {
      .content {
-         color: white;
+         color: black;
  
          h1 {
              font-size: 50px;
-             font-weight: 800;
          }
  
          h6 {
