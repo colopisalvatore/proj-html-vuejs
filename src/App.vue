@@ -4,6 +4,7 @@ import HeroComp from './assets/components/HeroComp.vue';
 import OurServices from './assets/components/OurServices.vue';
 import GrowComp from './assets/components/GrowComp.vue';
 import PortfolioComp from './assets/components/PortfolioComp.vue';
+import PriceComp from './assets/components/PriceComp.vue';
 
 
 
@@ -13,7 +14,8 @@ export default {
     HeroComp,
     OurServices,
     GrowComp,
-    PortfolioComp
+    PortfolioComp,
+    PriceComp
 },
 }
 
@@ -27,6 +29,7 @@ export default {
     <OurServices />
     <GrowComp />
     <PortfolioComp />
+    <PriceComp />
 </main>  
 </template>
 
