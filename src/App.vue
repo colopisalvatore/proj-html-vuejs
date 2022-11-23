@@ -1,18 +1,32 @@
-<script setup>
-import GrowComp from './assets/components/GrowComp.vue';
-import HeaderCompVue from './assets/components/HeaderComp.vue';
+<script>
+import HeaderComp from './assets/components/HeaderComp.vue';
 import HeroComp from './assets/components/HeroComp.vue';
 import OurServices from './assets/components/OurServices.vue';
+import GrowComp from './assets/components/GrowComp.vue';
+import PortfolioComp from './assets/components/PortfolioComp.vue';
+
+
+
+export default {
+    components: {
+    HeaderComp,
+    HeroComp,
+    OurServices,
+    GrowComp,
+    PortfolioComp
+},
+}
 
 
 </script>
 
 <template>
-<HeaderCompVue />
+<HeaderComp />
 <HeroComp />
 <main>
     <OurServices />
     <GrowComp />
+    <PortfolioComp />
 </main>  
 </template>
 
